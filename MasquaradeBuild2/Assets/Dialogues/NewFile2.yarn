@@ -1,0 +1,55 @@
+title: Start
+tags: 
+colorID: 0
+position: 535,255
+---
+<<if $npc_value != true>>
+Player: Hi!
+Croc: Hi!
+<<recordObject 0>>
+Croc: How are you?
+<<playNextNode Croc Water>>
+<<set $npc_value to true>>
+[[Fuck you |Fuck]]
+[[Good, and you? |Good]]
+<<endif>>
+===
+title: Fuck
+tags: 
+colorID: 0
+position: 322,513
+---
+Croc: Fuck you too
+===
+title: Good
+tags: 
+colorID: 0
+position: 736,506
+---
+Croc: Niceeeee
+===
+title: Cat
+tags: 
+colorID: 0
+position: 891,165
+---
+Cat: Here is water for Croc.
+<<addPoints 5>>
+<<set $water to true>>
+<<emptyNode Cat>>
+===
+title: Water
+tags: 
+colorID: 0
+position: 261,265
+---
+<<if $water == true>>
+<<recordObject 1>>
+Croc: Thank you for water!
+<<emptyNode Croc>>
+<<endif>>
+<<if $water != true>>
+Croc: Hi!
+Croc: Where is my water?
+<<endif>>
+===

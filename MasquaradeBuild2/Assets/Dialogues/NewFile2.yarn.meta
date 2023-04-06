@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 8c2a60272659230418287011237d50e7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - NewFile2-Start-0
+  - NewFile2-Start-1
+  - NewFile2-Start-2
+  - NewFile2-Start-3
+  - NewFile2-Start-4
+  - NewFile2-Fuck-5
+  - NewFile2-Good-6
+  - NewFile2-Cat-7
+  - NewFile2-Water-8
+  - NewFile2-Water-9
+  - NewFile2-Water-10
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

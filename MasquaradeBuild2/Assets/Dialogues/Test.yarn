@@ -1,0 +1,25 @@
+title: Start
+tags: 
+colorID: 0
+position: 521,272
+---
+Player: Hi!
+Croc: Hi!
+Croc: How are you?
+[[Fuck you |Fuck]]
+[[Good, and you? |Good]]
+===
+title: Fuck
+tags: 
+colorID: 0
+position: 322,513
+---
+Croc: Fuck you too
+===
+title: Good
+tags: 
+colorID: 0
+position: 736,506
+---
+Croc: Niceeeee
+===
