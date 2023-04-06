@@ -20,13 +20,13 @@ public class Notebook : MonoBehaviour
         {
             notebook.SetActive(true);
             notebookOpen = true;
-            Time.timeScale = 0;
+           // Time.timeScale = 0;
         }
        else if(Input.GetKeyDown(KeyCode.X) & notebookOpen == true)
         {
             notebook.SetActive(false);
             notebookOpen = false;
-            Time.timeScale = 1;
+           // Time.timeScale = 1;
         }
     }
 }
