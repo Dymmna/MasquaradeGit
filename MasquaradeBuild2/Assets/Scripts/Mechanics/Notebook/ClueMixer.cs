@@ -45,7 +45,7 @@ public class ClueMixer : MonoBehaviour
             addedA = true;
         }
 
-        if (collision.gameObject.name == "2")
+        if (collision.gameObject.name == "obj2")
         {
             addedB = true;
         }

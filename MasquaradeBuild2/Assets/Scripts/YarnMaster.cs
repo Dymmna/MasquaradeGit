@@ -10,6 +10,11 @@ public class YarnMaster : MonoBehaviour
     public int goodPoints = 0;
     public GameObject[] clues;
 
+    public GameObject[] inventoryObjs;
+    public GameObject notebookPage;
+
+    
+
     //условия чтобы переключать сцены если нужно
     //if(goodPoints >= 5){
     //    SceneManager.LoadScene("название сцены с плохими штуками")
@@ -23,7 +28,11 @@ public class YarnMaster : MonoBehaviour
         dialogueRunner.AddCommandHandler("emptyNode", EmptyNode);
         dialogueRunner.AddCommandHandler("playNextNode", playNextNode);
         dialogueRunner.AddCommandHandler("recordObject", recordObject);
+        dialogueRunner.AddCommandHandler("putToInventory", putToInventory);
         dialogueRunner.AddCommandHandler("addPoints", addPoints);
+        dialogueRunner.AddCommandHandler("takeFromInventory", takeFromInventory);
+
+        //notebookPage = GameObject.Find("2");
     }
 
     [YarnCommand("emptyNode")]
@@ -55,6 +64,27 @@ public class YarnMaster : MonoBehaviour
         int numberOfClue;
         int.TryParse(parameters[0], out numberOfClue);               
         clues[numberOfClue].SetActive(true);
+    }
+
+    [YarnCommand("putToInventory")]
+    public void putToInventory(string[] parameters)
+    {
+        int inventoryObject;
+        int.TryParse(parameters[0], out inventoryObject);
+
+        inventoryObjs[inventoryObject].SetActive(true);
+
+        //Instantiate(inventoryObjs[inventoryObject], new Vector3(0, 0, 0), Quaternion.identity);
+        //inventoryObjs[inventoryObject].transform.parent = notebookPage.transform;
+    }
+
+    [YarnCommand("takeFromInventory")]
+    public void takeFromInventory(string[] parameters)
+    {
+        int inventoryObject;
+        int.TryParse(parameters[0], out inventoryObject);
+
+        Destroy(inventoryObjs[inventoryObject]);
     }
 
     //points for good ending
