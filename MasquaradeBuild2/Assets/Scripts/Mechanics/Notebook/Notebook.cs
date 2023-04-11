@@ -14,16 +14,20 @@ public class Notebook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
+        //player = GameObject.Find("Player");
         
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKeyDown(KeyCode.X) & notebookOpen == false)
+        player = GameObject.Find("Player");
+
+        if (Input.GetKeyDown(KeyCode.X) & notebookOpen == false)
         {
             player.GetComponent<PlayerController>().enabled = false;
+            player.GetComponent<Animator>().enabled = false;
+            player.GetComponent<Rigidbody2D>().simulated = false;
 
             notebook.SetActive(true);
             notebookOpen = true;
@@ -32,6 +36,8 @@ public class Notebook : MonoBehaviour
        else if(Input.GetKeyDown(KeyCode.X) & notebookOpen == true)
         {
             player.GetComponent<PlayerController>().enabled = true;
+            player.GetComponent<Animator>().enabled = true;
+            player.GetComponent<Rigidbody2D>().simulated = true;
             notebook.SetActive(false);
             notebookOpen = false;
            // Time.timeScale = 1;

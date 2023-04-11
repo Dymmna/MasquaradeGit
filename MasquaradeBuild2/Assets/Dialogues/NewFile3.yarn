@@ -36,6 +36,7 @@ position: 882,78
 Cat: Here is water for Croc.
 <<addPoints 5>>
 <<putToInventory 0>>
+<<recordObject 1>>
 <<set $water to true>>
 <<emptyNode Cat>>
 ===
@@ -45,7 +46,6 @@ colorID: 0
 position: 252,178
 ---
 <<if $water == true>>
-<<recordObject 1>>
 Croc: Thank you for water!
 <<takeFromInventory 0>>
 <<emptyNode Croc>>

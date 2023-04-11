@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 662d17c728fe1ea4d87c4dd8e6c32814
+guid: df8844e627ab9cc4caebbfe65b127966
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -10,17 +10,17 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: 
   stringIDs:
-  - NewFile3 (1)-Start-0
-  - NewFile3 (1)-Start-1
-  - NewFile3 (1)-Start-2
-  - NewFile3 (1)-Start-3
-  - NewFile3 (1)-Start-4
-  - NewFile3 (1)-Fuck-5
-  - NewFile3 (1)-Good-6
-  - NewFile3 (1)-Cat-7
-  - NewFile3 (1)-Water-8
-  - NewFile3 (1)-Water-9
-  - NewFile3 (1)-Water-10
+  - NewFile3-Start-0
+  - NewFile3-Start-1
+  - NewFile3-Start-2
+  - NewFile3-Start-3
+  - NewFile3-Start-4
+  - NewFile3-Fuck-5
+  - NewFile3-Good-6
+  - NewFile3-Cat-7
+  - NewFile3-Water-8
+  - NewFile3-Water-9
+  - NewFile3-Water-10
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
