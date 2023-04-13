@@ -7,6 +7,10 @@ public class NextButton : MonoBehaviour
     public GameObject b;
     private void OnMouseDown()
     {
-        b.GetComponent<Switch>().Next();
+        if (b.GetComponent<Switch>().index <3)
+        {
+            b.GetComponent<Switch>().Next();
+        }
+       
     }
 }

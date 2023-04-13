@@ -7,6 +7,10 @@ public class PrevPage : MonoBehaviour
     public GameObject b;
     private void OnMouseDown()
     {
-        b.GetComponent<Switch>().Previous();
+        if (b.GetComponent<Switch>().index > 0)
+        {
+            b.GetComponent<Switch>().Previous();
+        }
+       
     }
 }

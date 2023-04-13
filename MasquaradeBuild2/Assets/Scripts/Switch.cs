@@ -7,7 +7,7 @@ public class Switch : MonoBehaviour
     public GameObject[] spreads;
     public GameObject[] buttons;
 
-    int index;
+    public int index;
     // Start is called before the first frame update
     void Start()
     {
