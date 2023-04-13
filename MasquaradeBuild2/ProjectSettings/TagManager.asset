@@ -6,6 +6,7 @@ TagManager:
   tags:
   - clue
   - Scanner
+  - Slot
   layers:
   - Default
   - TransparentFX
