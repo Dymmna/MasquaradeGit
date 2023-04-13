@@ -6,7 +6,7 @@ public class RestrictMovement : MonoBehaviour
 {
     private Transform objTransform;
 
-    float speed = 0;
+    //float speed = 0;
 
 
     // Start is called before the first frame update

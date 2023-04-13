@@ -74,7 +74,7 @@ public class ScannedClue : MonoBehaviour
         animator.SetTrigger("NotScanned");
         Destroy(gameObject);
                
-        }
+        
 
            
     }

@@ -9,15 +9,27 @@ public class FastTravel : MonoBehaviour
     [Header("objects to delete")]
     public GameObject[] toDelete;
     public GameObject notebook;
+    public GameObject notebookHolder;
+    public Notebook notebookScript;
 
     void Start()
     {
         notebook = GameObject.Find("Notebook new");
+        notebookHolder = GameObject.Find("NotebookHolder");
+        notebookScript = notebookHolder.GetComponent<Notebook>();
+    }
+
+    private void Update()
+    {
+        notebook = GameObject.Find("Notebook new");
+        
     }
 
     private void OnMouseDown()
     {
         notebook.SetActive(false);
+        notebookScript.notebookOpen = false;
+
 
         if (sceneName != SceneManager.GetActiveScene().name)
         {
