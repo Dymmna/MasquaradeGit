@@ -7,6 +7,7 @@ TagManager:
   - clue
   - Scanner
   - Slot
+  - detail
   layers:
   - Default
   - TransparentFX
